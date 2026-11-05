@@ -1,3 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid darkblue;
+    padding: 2px;
+    box-shadow: 0 0 15px gray;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 2px solid #333;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+h1 {
+    color: darkblue;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -22,6 +57,12 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
 
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    text-align: center;
 }
