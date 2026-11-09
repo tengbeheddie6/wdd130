@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #2B4162;
+    --secondary-color: #385F71;
+    --accent-color: #F5B700;
+    --heading-font: Arial, sans-serif;
+    --body-font: Arial, sans-serif;
+    --standard-padding: 20px;
+    --standard-margin: 20px;
+}
+
 /*General body styling */
 body {
     font-family: Arial, sans-serif;
