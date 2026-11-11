@@ -10,7 +10,9 @@
 
 /*General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var (--body-font);
+    margin: 0;
+    padding: 0;
 }
 
 /*Navigation styling*/
@@ -23,6 +25,7 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 
 /*Main content styling*/
@@ -60,6 +63,7 @@ aside {
     padding: 1rem;
     background-color: #f0f0f0;
     color: #333;
+    text-align: center;
 }
 
 /*Aside image styling */
