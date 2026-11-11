@@ -10,14 +10,14 @@
 
 /*General body styling */
 body {
-    font-family: var (--body-font);
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /*Navigation styling*/
 nav {
-    background-color: darkblue;
+    background-color: #2B4162;
     padding: 10px;
 }
 
@@ -36,14 +36,14 @@ main {
 
 /*Heading styling */
 h1 {
-    color: darkblue;
+    color: #2B4162;
 }
 
 /*main image styling */
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
-    border: 1px solid darkblue;
+    border: 1px solid #2B4162;
     padding: 2px;
     box-shadow: 0 0 15px gray;
 }
@@ -75,7 +75,7 @@ aside img {
 
 /*Footer styling*/
 footer {
-    margin-top: 20px;
-    border-top: 2px solid #333;
+    margin-top: 15px;
+    border-top: 1px solid #333;
     text-align: center;
 }
