@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #1D3557;
+    --secondary-color: #457B9D;
+    --accent1-color: #E9C46A;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-color: #333333;
+    --body-font: Arial, Helvetica, sans-serif;
+    --background-color: #F1FAEE;
+}
+
+/* 2. CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+
+}
+
+/* 4. PAGE WIDTH AND CENTERING */
+header,
+main,
+footer {
+    width: 840px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* 5. HEADING */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* 6. BASIC SPACING */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/*  7. SOCIAL MEDIA LINKS */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* 8. HERO CONTAINER */
+.hero {
+    position: relative;
+}
+
+/* 9. HERO IMAGE */
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 10 HERO HEADING */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: #ffffff;
+}
+
+/* 11. HERO ARTICLE */
+.hero article {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 16px;
+    opacity: 0.9;
+}
+
+/* 12. IMAGE INSIDE THE ARTICLE */
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 0 0 10px 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
