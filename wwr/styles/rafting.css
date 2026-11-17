@@ -1,30 +1,34 @@
+/* 1. CSS VARIABLES */
+
 :root {
     --primary-color: #1D3557;
     --secondary-color: #457B9D;
     --accent1-color: #E9C46A;
+    --background-color: #F1FAEE;
 
-    --heading-font: "Times New Roman", "Georgia", serif;
-
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
-
 }
 
-/* 2. CSS RESET*/
+/* 2. CSS RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY STYLING */
+/* 3. BODY STYLING */
+
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
     background-color: var(--background-color);
-
+    line-height: 1.6;
 }
 
 /* 4. PAGE WIDTH AND CENTERING */
+
 header,
 main,
 footer {
@@ -33,81 +37,185 @@ footer {
     margin: 0 auto;
 }
 
+/* 5. HEADER USING CSS GRID */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+}
+
 header img {
     width: 100px;
     height: auto;
 }
 
-/* 5. HEADING */
+/* 6. NAVIGATION USING FLEXBOX */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+/* 7. HEADING STYLING */
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
-/* 6. BASIC SPACING */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/*  7. SOCIAL MEDIA LINKS */
-.socialmedia a {
-    text-decoration: none;
+h2 {
+    margin-bottom: 15px;
 }
 
 /* 8. HERO CONTAINER */
+
 .hero {
     position: relative;
+    margin-bottom: 30px;
 }
 
 /* 9. HERO IMAGE */
+
 .hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* 10 HERO HEADING */
+/* 10. HERO HEADING */
+
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
     text-align: center;
     opacity: 0.9;
-    background-color: var(--accent1-color);
-    color: #ffffff;
 }
 
 /* 11. HERO ARTICLE */
+
 .hero article {
     position: absolute;
-    top: 200px;
+    bottom: 20px;
     left: 20px;
     right: 20px;
+    padding: 15px;
     background-color: var(--secondary-color);
-    color: #ffffff;
-    padding: 16px;
-    opacity: 0.9;
+    color: #FFFFFF;
+    opacity: 0.95;
 }
 
-/* 12. IMAGE INSIDE THE ARTICLE */
+/* 12. IMAGE INSIDE HERO ARTICLE */
+
 .hero article img {
     float: right;
     width: 125px;
     height: auto;
     margin: 0 0 10px 15px;
-    border: 2px solid #ffffff;
+    border: 2px solid #FFFFFF;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+
+/* 13. HISTORY SECTION */
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+}
+
+.history h2 {
+    grid-column: 1 / 4;
+}
+
+.history p {
+    grid-column: 1 / 3;
+    padding: 10px;
+}
+
+.history img {
+    grid-column: 3 / 4;
+    width: 100%;
+    height: auto;
+}
+
+/* 14. ADVENTURES SECTION */
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+}
+
+.adventures h2 {
+    width: 100%;
+}
+
+.adventures figure {
+    flex: 1 1 130px;
+    text-align: center;
+}
+
+.adventures figure img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.adventures figcaption {
+    padding: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* 15. FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 16. SOCIAL MEDIA LINKS */
 
 .socialmedia {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 15px;
 }
 
@@ -119,5 +227,4 @@ article {
     width: 35px;
     height: 35px;
     object-fit: contain;
-    background-color: var(--accent2-color);
 }
