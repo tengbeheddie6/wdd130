@@ -104,6 +104,11 @@ main h1 {
 /* =================================
    MAP AND CONTACT FORM LAYOUT
 ================================= */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
 
 .contact-layout {
     display: grid;
