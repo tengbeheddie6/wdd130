@@ -91,7 +91,7 @@ main h1 {
 .company-details {
     text-align: center;
     margin-bottom: 20px;
-    text-align: center;
+
 }
 
 .company-details p {
@@ -294,6 +294,9 @@ footer .socialmedia img {
 ================================= */
 
 @media screen and (max-width: 600px) {
+    .contact-form {
+        padding: 5px;
+    }
 
     header {
         grid-template-columns: 1fr;
