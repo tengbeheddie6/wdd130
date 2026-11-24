@@ -11,7 +11,7 @@
 
     <meta name="author" content="Eddie Tengbeh">
 
-    <link rel="stylesheet" href="water_rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@
             <h2>Meet Our Team</h2>
 
             <figure>
-                <img src="images/Eddie.jpeg" alt="Rafting company manager">
+                <img src="images/eddie.jpeg" alt="Rafting company manager">
                 <figcaption>Eddie Tengbeh - Company Manager</figcaption>
             </figure>
 
@@ -65,7 +65,7 @@
             </figure>
 
             <figure>
-                <img src="images/Lucy.jpeg" alt="Customer service representative">
+                <img src="images/lucy.jpeg" alt="Customer service representative">
                 <figcaption>Lucy Musa - Customer Service Representative</figcaption>
             </figure>
 
@@ -87,26 +87,26 @@
                     <label for="email">Your Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </div>
-
                 <fieldset>
                     <legend>Purpose of Message:</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general inquiry" required>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general inquiry" required>
                         General Inquiry
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation question">
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation question">
                         Reservation Question
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="website suggestion">
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="website suggestion">
                         Website Suggestion
                     </label>
 
                 </fieldset>
+
 
                 <div class="form-item">
                     <label for="message">Your Message:</label>
