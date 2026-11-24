@@ -29,7 +29,7 @@
 ================================= */
 
 .trips-button {
-    display: inline-block;
+    display: column;
     background-color: var(--accent-color);
     color: var(--primary-color);
     text-decoration: none;
@@ -203,6 +203,52 @@
 
     .trips-contact {
         padding: 30px 15px;
+    }
+}
+
+/* =================================
+   TRIPS PAGE - HORIZONTAL NAVIGATION
+================================= */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 12px 22px;
+    text-decoration: none;
+}
+
+/* MOBILE NAVIGATION */
+
+@media screen and (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 15px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
