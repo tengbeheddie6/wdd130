@@ -238,6 +238,7 @@ footer {
     align-items: center;
     padding: 20px 5%;
     background-color: var(--accent-color);
+    color: var(--dark-color);
     border-top: 2px solid var(--primary-color);
 }
 
