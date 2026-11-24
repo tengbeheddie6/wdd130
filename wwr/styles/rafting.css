@@ -310,7 +310,21 @@ footer .socialmedia img {
     }
 
     header nav a {
-        padding: 10px;
+        display: block;
+        background-color: #3B6B87;
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px 22px;
+        border: 2px solid #E9C46A;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+    header nav a:hover {
+        background-color: #E9C46A;
+        color: #222222;
     }
 
     .contact-layout {
