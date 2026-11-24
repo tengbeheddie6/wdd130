@@ -88,13 +88,13 @@ main h1 {
    COMPANY DETAILS
 ================================= */
 
-.company-details {
+.company-info {
     text-align: center;
     margin-bottom: 20px;
 
 }
 
-.company-details p {
+.company-info p {
     line-height: 1.4;
     margin: 4px;
     text-align: center;
