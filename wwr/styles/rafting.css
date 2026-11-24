@@ -44,7 +44,8 @@ header nav ul {
 
 header nav a {
     display: block;
-    background-color: #457B9D;
+    background-color: #3B6B87;
+    ;
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
@@ -66,6 +67,7 @@ header nav li:last-child a {
 
 header nav a:hover {
     background-color: #E9C46A;
+    color: #222222;
 }
 
 /* =================================
@@ -308,6 +310,11 @@ footer .socialmedia img {
         flex-wrap: wrap;
     }
 
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     header nav a {
         display: block;
         background-color: #3B6B87;
@@ -324,11 +331,6 @@ footer .socialmedia img {
     header nav a:hover {
         background-color: #E9C46A;
         color: #222222;
-    }
-
-    .contact-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .map iframe {
