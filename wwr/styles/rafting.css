@@ -114,8 +114,7 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
-    align-items: center;
-    margin-bottom: 30px;
+
 }
 
 .map iframe {
