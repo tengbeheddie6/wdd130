@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,126 +13,160 @@
 
 <body>
     <header>
-        <img src="images/z-splash.png" alt="Eddie's Rafting Company Logo">
+        <img src="images/z-splash.png" alt="Eddie's Rafting Company logo">
+
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
-    </header>
+        <main class="trips-main">
 
-    <main class="trips-main">
+            <!-- Trips Hero Section -->
+            <section class="trips-hero">
+                <h1>Discover Your Next Adventure</h1>
+                <p>
+                    Experience the excitement of white water rafting with
+                    Eddie's Rafting Company. Choose an adventure that matches
+                    your experience and enjoy an unforgettable river journey.
+                </p>
+                <a href="contact.html" class="trips-button">Book Your Adventure</a>
+            </section>
 
-        <section class="trips-hero">
-            <h1>Explore Our Rafting Adventures</h1>
-            <p>Experience excitement, beautiful scenery, and unforgettable memories with us.</p>
-            <a href="contact.html" class="trips-button">Contact Us to Book a Trip</a>
-        </section>
+            <!-- Trip Cards -->
+            <section class="trip-list">
+                <h2>Choose Your Rafting Adventure</h2>
+                <p class="trip-intro">
+                    We offer different rafting experiences for beginners
+                    and experienced adventurers.
+                </p>
 
-        <section class="trip-list">
-            <h2>Choose Your Adventure</h2>
+                <div class="trip-grid">
 
-            <div class="trip-grid">
+                    <article class="trip-card">
+                        <img src="images/images2.jpeg" alt="Visitors enjoying a beginner rafting adventure">
 
-                <article class="trip-card">
-                    <img src="images/images2.jpeg" alt="People enjoying a white water rafting adventure">
-                    <h3>Beginner River Adventure</h3>
-                    <p>
-                        Perfect for beginners and families. Enjoy a relaxing
-                        rafting experience while learning basic rafting skills
-                        with our professional guides.
-                    </p>
-                    <p><strong>Duration:</strong> 2 Hours</p>
-                    <p><strong>Difficulty:</strong> Easy</p>
-                </article>
+                        <div class="trip-card-content">
+                            <p class="trip-level">BEGINNER</p>
+                            <h3>Beginner River Adventure</h3>
+                            <p>
+                                Start your rafting journey with a relaxing
+                                introduction to river rafting. Enjoy the
+                                river scenery and learn basic rafting skills.
+                            </p>
 
-                <article class="trip-card">
-                    <img src="images/images3.jpeg" alt="Rafters navigating exciting river rapids">
-                    <h3>White Water Challenge</h3>
-                    <p>
-                        Enjoy an exciting experience through fast-moving water
-                        and challenging rapids. This adventure is suitable
-                        for people looking for more excitement.
-                    </p>
-                    <p><strong>Duration:</strong> 4 Hours</p>
-                    <p><strong>Difficulty:</strong> Moderate</p>
-                </article>
+                            <div class="trip-details">
+                                <span>Duration: 2 Hours</span>
+                                <span>Difficulty: Easy</span>
+                            </div>
 
-                <article class="trip-card">
-                    <img src="images/images3.jpeg" alt="A group of rafters enjoying a river adventure">
-                    <h3>Full Day River Expedition</h3>
-                    <p>
-                        Spend a full day exploring beautiful river scenery.
-                        Enjoy rafting, sightseeing, and breaks along the river
-                        with our experienced guides.
-                    </p>
-                    <p><strong>Duration:</strong> 8 Hours</p>
-                    <p><strong>Difficulty:</strong> Advanced
-                    </p>
-                </article>
+                            <a href="contact.html" class="trip-link">
+                                Book This Trip
+                            </a>
+                        </div>
+                    </article>
 
-            </div>
-        </section>
+                    <article class="trip-card">
+                        <img src="images/images3.jpeg" alt="Rafters navigating exciting white water">
 
-        <section class="trip-table-section">
-            <h2>Available Rafting Trips</h2>
+                        <div class="trip-card-content">
+                            <p class="trip-level">INTERMEDIATE</p>
+                            <h3>White Water Challenge</h3>
+                            <p>
+                                Experience exciting rapids and teamwork
+                                during this adventure. This trip is ideal
+                                for people with some rafting experience.
+                            </p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip Name</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Suitable For</th>
-                    </tr>
-                </thead>
+                            <div class="trip-details">
+                                <span>Duration: 4 Hours</span>
+                                <span>Difficulty: Moderate</span>
+                            </div>
 
-                <tbody>
-                    <tr>
-                        <td>Beginner River Adventure</td>
-                        <td>2 Hours</td>
-                        <td>Easy</td>
-                        <td>Families and Beginners</td>
-                    </tr>
+                            <a href="contact.html" class="trip-link">
+                                Book This Trip
+                            </a>
+                        </div>
+                    </article>
 
-                    <tr>
-                        <td>White Water Challenge</td>
-                        <td>4 Hours</td>
-                        <td>Moderate</td>
-                        <td>Adventure Lovers</td>
-                    </tr>
+                    <article class="trip-card">
+                        <img src="images/enjoying3.jpeg" alt="Rafters enjoying a river expedition">
 
-                    <tr>
-                        <td>Full Day River Expedition</td>
-                        <td>8 Hours</td>
-                        <td>Advanced</td>
-                        <td>Experienced Rafters</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                        <div class="trip-card-content">
+                            <p class="trip-level">ADVANCED</p>
+                            <h3>Full Day River Expedition</h3>
+                            <p>
+                                Enjoy a full day of river exploration,
+                                beautiful scenery and challenging rafting.
+                                Recommended for experienced rafters.
+                            </p>
 
-        <section class="trips-contact">
-            <h2>Ready for Your Next Adventure?</h2>
-            <p>Contact our team today to learn more about our rafting trips and make your reservation.</p>
-            <a href="contact.html" class="trips-button">Visit Contact Us</a>
-        </section>
+                            <div class="trip-details">
+                                <span>Duration: 8 Hours</span>
+                                <span>Difficulty: Advanced</span>
+                            </div>
 
-    </main>
+                            <a href="contact.html" class="trip-link">
+                                Book This Trip
+                            </a>
+                        </div>
+                    </article>
 
-    <footer>
-        <p>© 2026 Eddie's Rafting Company | Eddie Tengbeh</p>
-        <nav>
-            <a href="https://facebook.com">Facebook
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://instagram.com">Instagram
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
+                </div>
+            </section>
 
-</body>
+            <!-- Trip Comparison Table -->
+            <section class="trip-table-section">
+                <h2>Compare Our Rafting Trips</h2>
+                <p>Review the details below before choosing your adventure.</p>
 
-</html>
+                <table>
+                    <caption>Rafting Trip Summary</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Trip Name</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Difficulty</th>
+                            <th scope="col">Suitable For</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Beginner River Adventure</td>
+                            <td>2 Hours</td>
+                            <td>Easy</td>
+                            <td>Beginners</td>
+                        </tr>
+
+                        <tr>
+                            <td>White Water Challenge</td>
+                            <td>4 Hours</td>
+                            <td>Moderate</td>
+                            <td>Intermediate Rafters</td>
+                        </tr>
+
+                        <tr>
+                            <td>Full Day River Expedition</td>
+                            <td>8 Hours</td>
+                            <td>Advanced</td>
+                            <td>Experienced Rafters</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Final Contact Section -->
+            <section class="trips-contact">
+                <h2>Ready for Your Next Adventure?</h2>
+                <p>
+                    Contact us today to learn more about our rafting
+                    experiences and plan your next trip.
+                </p>
+                <a href="contact.html" class="trips-button">Contact Us Today</a>
+            </section>
+
+        </main>
